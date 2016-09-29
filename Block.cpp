@@ -66,4 +66,5 @@ Block& Block::operator=(const Block& nuevoBloque){
             blocks[num].bitValid = true;
             blocks[num].tagBlock = tag;   
         }
+        
  }

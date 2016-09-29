@@ -18,15 +18,18 @@
 class Memoria{
 	public:
             Memoria();
-            //CacheMemory(const dir_t &v_assoc, const dir_t &v_mem_size, const dir_t &v_block_size);           
+            
             ~Memoria();
             Memoria ( int &valueAssoc, int &valueMemorySize,  int &valeuBlockSize);
-            void Generador();
-           
+            void generador();
+           //metodo imprime como se realizo el cache con todos los caltculos
+            void imprimir();
+            
+            // Los metodos set son para dar valor a los atributos 
 		void set_block_size(int &valor);
 		void set_assoc(int &valor);
 		void set_mem_size(int &valor);
-		const void print();
+           //Se trato de implementar el cache mediante un vector 
                 std::vector< Block > vec_bloques;
 private: 
 		int tag_size;
